@@ -33,13 +33,6 @@ void loop() {
     digitalWrite(led5,LOW);
     }
       
-   /* if (sound < 30) {
-    digitalWrite(led1, HIGH);
-    digitalWrite(led2,LOW);
-    digitalWrite(led3,LOW);
-    digitalWrite(led4,LOW);
-    digitalWrite(led5,HIGH);
-  }*/
     if (sound > 100) {
   
     digitalWrite(led1, HIGH);
@@ -54,9 +47,7 @@ void loop() {
     if (sound < 100) {
 
     digitalWrite(led3, LOW);
-  //  digitalWrite(led2, LOW);
-   
-    delay(15);
+   delay(15);
   }
     if (sound > 150) {
     digitalWrite(led1, HIGH);
@@ -81,24 +72,5 @@ void loop() {
     if (sound > 200) {
     digitalWrite(led3, HIGH);
   }
-  
-  
-   /* if (sound > 250) {
-     if(led3==HIGH)
-     {
-         digitalWrite(led1, LOW);         
-         digitalWrite(led3, LOW);
-     }
-     else
-     {
-         digitalWrite(led1, HIGH);         
-         digitalWrite(led3, HIGH);
-     }
-    digitalWrite(led3, HIGH);
-    delay(20);
-  }
-    if (sound < 250) {
-    digitalWrite(led3, LOW);
-  } */
   delay(10);
 }
